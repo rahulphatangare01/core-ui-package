@@ -3,7 +3,8 @@ type Props = {
 };
 
 const ZInput: React.FC<Props> = ({ text }) => {
-  return <div> Button</div>;
+  // return <input />;
+  return <h1> {text}</h1>;
 };
 
 export default ZInput;
