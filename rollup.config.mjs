@@ -28,7 +28,7 @@ export default [
         tsconfig: "./tsconfig.json",
         // exclude: ["**/*.test.tsx", "**/*.test.ts", "**/*.stories.ts"],
       }),
-      //   postcss({ extensions: [".css"], inject: true, extract: false }),
+      postcss({ extensions: [".css"], inject: true, extract: false }),
     ],
   },
   {
@@ -36,6 +36,6 @@ export default [
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
 
-    // external: [/\.css$/],
+    external: [/\.css$/],
   },
 ];
